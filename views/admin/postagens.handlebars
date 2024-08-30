@@ -1,0 +1,30 @@
+{{#if produtos.length}}
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Descrição</th>
+                <th>Preço</th>
+                <th>Quantidade</th>
+                <th>Tamanho</th>
+                <th>Cor</th>
+                <th>Categoria</th>
+                <th>Data</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each produtos}}
+                <tr>
+                    <td>{{nome}}</td>
+                    <td>{{descricao}}</td>
+                    <td>{{preco}}</td>
+                    <td>{{quantidade}}</td>
+                    <td>{{tamanho}}</td>
+                    <td>{{cor}}</td>
+                    <td>{{categoria}}</td>
+                    <td>{{date}}</td>
+                </tr>
+            {{/each}}
+        </tbody>
+    </table>
+
